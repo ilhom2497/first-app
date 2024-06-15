@@ -7,7 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div id="main-container">
+        <div class="container">
+            <h1>Enter Temperature</h1>
+            <form id="tempConverter">
+                <div class="input">
+                    <label for="degree">Degree</label>
+                    <input type="number" id="degree" required>
+                    <select id="unit">
+                        <option value="C">°C</option>
+                        <option value="F">°F</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label for="convertIn">Convert In</label>
+                    <select id="convertIn">
+                        <option value="F">Fahrenheit (°F)</option>
+                        <option value="C">Celsius (°C)</option>
+                    </select>
+                </div>
+                <button type="submit">Convert</button>
+            </form>
+        </div>
+        <div class="result">
+            <span id="resultValue">32</span>
+            <span id="resultUnit">°F</span>
+        </div>
+    </div>
 
     <script src="main.js"></script>
 </body>
